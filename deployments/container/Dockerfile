@@ -83,6 +83,7 @@ LABEL release="N/A"
 LABEL summary="NVIDIA device plugin for Kubernetes"
 LABEL description="See summary"
 
+RUN echo "/lib64" > /etc/ld.so.conf.d/lib64.conf
 RUN mkdir /licenses && mv /NGC-DL-CONTAINER-LICENSE /licenses/NGC-DL-CONTAINER-LICENSE
 
 COPY --from=build /artifacts/config-manager         /usr/bin/config-manager
