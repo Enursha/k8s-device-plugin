@@ -15,7 +15,7 @@
 DRIVER_NAME := k8s-device-plugin
 MODULE := github.com/NVIDIA/$(DRIVER_NAME)
 
-REGISTRY ?= nvcr.io/nvidia
+REGISTRY ?= ghcr.io/enursha
 
 VERSION ?= v0.17.1
 
